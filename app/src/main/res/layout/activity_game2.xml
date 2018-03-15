@@ -8,17 +8,17 @@
     tools:context="com.example.elijahsmith.guessinggame.GameActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/guess_edittext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="56dp"
         android:ems="10"
         android:hint="1-100"
         android:inputType="number"
+        android:maxLength="3"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/submit_guess_button"
         app:layout_constraintEnd_toEndOf="@+id/clue_textview"
-        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="@+id/clue_textview" />
 
     <TextView
@@ -30,27 +30,29 @@
         android:text="Guess a Number"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="5dp" />
 
     <TextView
         android:id="@+id/clue_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
-        android:text="Higher"
-        android:textSize="30sp"
+        android:layout_marginTop="102dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/instruction_textview"
-        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="@+id/instruction_textview"
-        tools:layout_editor_absoluteY="121dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/submit_guess_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="196dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:background="@android:color/holo_blue_bright"
@@ -58,7 +60,7 @@
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="@+id/editText" />
+        app:layout_constraintEnd_toEndOf="@+id/guess_edittext"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guess_edittext" />
 </android.support.constraint.ConstraintLayout>
